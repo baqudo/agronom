@@ -1,0 +1,16 @@
+{% import "data/articles.html" as articles %}
+
+<h2 class="news__header">Последние новости</h2>
+<div class="news">
+{% for news in articles.news %}
+
+	<div class="news__block">
+		<img src="{{news.img}}" alt="a" class="news__img">
+		<h3 class="news__title">{{news.title}}</h3>
+		<div class="news__date">{{news.date}}</div>
+		<a href="{{news.category_href}}"><div class="news__category">{{news.category}}</div></a>
+		<div class="news__text">{{news.text}}</div>
+	</div>
+
+{% endfor %}
+</div>

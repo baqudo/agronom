@@ -1,0 +1,55 @@
+
+<header class="header">
+	<div class="wrapper">
+		<div class="header_top">
+			<div class="header__lang">
+				<a href="#" class="lang__link lang__link_active">рус</a>
+				<a href="#" class="lang__link">укр</a>
+				<a href="#" class="lang__link">eng</a>
+			</div>
+		</div>
+
+			<div class="header__logo"><a href="#">
+				<img src="img/logo.png" alt="logo">
+				<div class="header__logo__text">Украинский деловой союз</div></a>
+			</div>
+
+			<div class="header__social">
+				<ul>
+					<li class="social__button"><a href="#" class="social__link"><img src="img/icon-tw-gray.png" alt="Tw"></a></li>
+					<li class="social__button"><a href="#" class="social__link"><img src="img/icon-fb-gray.png" alt="Fb"></a></li>
+					<li class="social__button"><a href="#" class="social__link"><img src="img/icon-g+-gray.png" alt="g+"></a></li>
+					<li class="social__button"><a href="#" class="social__link"><img src="img/icon-youtube-gray.png" alt="Yt"></a></li>
+				</ul>
+			</div>
+
+			<div class="currency">
+				<ul class="currency__list">
+					<li class="currency__item">USD
+						<a href="" class="currency__link">23,26/23,48</a>
+					</li>
+					<li class="currency__item">EUR
+						<a href="" class="currency__link">25,58/25,85</a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="header__search">поиск</button>
+
+			<nav class="header__nav">
+				<ul class="header__menu__list">
+
+					<li class="header__menu__item"><a href="#" class="header__menu__link header__menu__link_active"><img src="img/home.png" alt=""></a></li>
+
+				{% import "data/menu.html" as items %}
+
+				{% for item in items.header_menu %}
+					<li class="header__menu__item"><a href="{{item.href}}" class="{{item.class}} {{item.class2}}">{{item.title}}</a></li>
+				{% endfor %}
+
+				</ul>
+			</nav>
+		
+	</div>
+</header>
+	<div class="slider_blind"></div>

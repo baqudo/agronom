@@ -1,0 +1,43 @@
+body
+	background: #FFF
+	font-family: "Open Sans", sans-serif
+	font-size: 13px
+	line-height: 20px
+	color: #45495a
+	a
+		text-decoration: none
+		color: #45495a
+	a:hover
+		text-decoration: underline
+.wrapper
+	max-width: 1000px
+	margin: 0 auto
+	position: relative
+ 
+.wrapper_left
+	max-width: 75% 
+	margin-right: 25%
+	height: 100% 
+	background-color: #FFF
+
+.wrapper_right
+	max-width: 25% 
+	margin-left: 75%
+	height: 100%
+	background-color: #FFF
+	position: absolute
+	top: 0
+	right: 0 
+	&:before
+		content: ""
+		position: absolute 
+		border-left: 1px solid #ececee 
+		height: 100% 
+
+.clearfix
+	// clear: both
+	&:after
+		content: ""
+		display: block
+		clear: both
+
