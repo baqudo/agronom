@@ -50,6 +50,7 @@
 			font-size: 15px
 			font-weight: 400
 			line-height: 40px
+			
 .slick-prev
 	cursor: pointer
 	position: absolute
@@ -72,13 +73,13 @@
 		transform: rotate(-45deg) translate(10px, 6px)
 	&:after
 		transform: rotate(45deg) translate(10px, -6px)
+
 .slick-next
 	@extend .slick-prev
 	transform: rotate(180deg)
-	left: 97%
+	left: auto
+	right: 0
+
 .slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus
 	background-color: rgba(0,0,0,0.2)
-.slider-prev_mini, .slider-next_mini
-	width: 29px
-	height: 49px
-	top: 30%
+

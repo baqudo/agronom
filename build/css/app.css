@@ -350,7 +350,7 @@ body a:hover {
   height: 100%;
 }
 
-.clearfix:after, .header:after, .about:after {
+.clearfix:after, .header:after, .about:after, .sb__wrapper:after {
   content: "";
   display: block;
   clear: both;
@@ -364,15 +364,17 @@ body a:hover {
 }
 
 .content > .wrapper {
+  box-shadow: 0 5px 30px 5px #000;
   background-color: #fff;
 }
 
 .download__more {
   width: 100%;
   height: 53px;
-  background: #fefefe url(../img/more_bg.png) no-repeat;
+  background-image: linear-gradient(#ddd 0%, #eee 30%, #fff 80%);
   text-align: center;
-  border: 1px solid #fefefe;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
 }
 
 .download__more:hover {
@@ -400,7 +402,7 @@ body a:hover {
   right: -35px;
   width: 22px;
   height: 22px;
-  background: #FFF url(../img/icon-more.png) no-repeat center;
+  background: transparent url(../img/icon-more.png) no-repeat center;
 }
 
 .header {
@@ -654,17 +656,12 @@ body a:hover {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-  left: 97%;
+  left: auto;
+  right: 0;
 }
 
 .slick-prev:hover, .slick-next:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus, .slick-next:focus {
   background-color: rgba(0, 0, 0, 0.2);
-}
-
-.slider-prev_mini, .slider-next_mini {
-  width: 29px;
-  height: 49px;
-  top: 30%;
 }
 
 .news__header {
@@ -951,8 +948,8 @@ body a:hover {
 
 .footer {
   width: 100%;
-  margin: 30px 0;
   height: auto;
+  padding: 20px 0;
   color: #fff;
 }
 
@@ -1035,13 +1032,14 @@ body a:hover {
 
 .sb__wrapper {
   width: 100%;
-  height: 200px;
+  height: 100%;
 }
 
 .slider__bottom {
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: #fff;
+  overflow: hidden;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1050,10 +1048,26 @@ body a:hover {
   flex-wrap: no-wrap;
 }
 
+.slider__bottom .slick-prev, .slider__bottom .slick-next {
+  width: 29px;
+  height: 49px;
+  top: 25%;
+}
+
+.slider__bottom .slick-prev:before, .slider__bottom .slick-next:before {
+  -webkit-transform: rotate(-45deg) translate(6px, 2px);
+  -ms-transform: rotate(-45deg) translate(6px, 2px);
+  transform: rotate(-45deg) translate(6px, 2px);
+}
+
+.slider__bottom .slick-prev:after, .slider__bottom .slick-next:after {
+  -webkit-transform: rotate(45deg) translate(6px, -2px);
+  -ms-transform: rotate(45deg) translate(6px, -2px);
+  transform: rotate(45deg) translate(6px, -2px);
+}
+
 .slider__item {
-  width: 30%;
-  height: 100%;
-  float: left;
+  max-width: 30%;
 }
 
 .slider__item .slider__desc {
