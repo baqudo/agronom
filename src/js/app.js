@@ -12,6 +12,7 @@ $(document).ready(function (){
 
 $(document).ready(function (){
 	$('.slider__bottom').slick({
-		slidesToShow: 4,
+		slidesToShow: 2,
 	});
 });
+
