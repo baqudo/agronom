@@ -1066,10 +1066,6 @@ body a:hover {
   transform: rotate(45deg) translate(6px, -2px);
 }
 
-.slider__item {
-  max-width: 30%;
-}
-
 .slider__item .slider__desc {
   color: black;
   font-size: 15px;
