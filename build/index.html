@@ -21,7 +21,7 @@
       <header class="header">
         <div class="wrapper">
           <div class="header_top">
-            <div class="header__lang">
+            <div class="header__lang lang">
               <a href="#" class="lang__link lang__link_active">рус</a>
               <a href="#" class="lang__link">укр</a>
               <a href="#" class="lang__link">eng</a>
@@ -66,33 +66,33 @@
           <button class="header__search">поиск</button>
 
           <nav class="header__nav">
-            <ul class="header__menu__list">
+            <ul class="menu__list">
 
-              <li class="header__menu__item">
-                <a href="#" class="header__menu__link header__menu__link_active"><img src="img/home.png" alt=""></a>
+              <li class="menu__item">
+                <a href="#" class="menu__link is-active"><img src="img/home.png" alt=""></a>
               </li>
 
-              <li class="header__menu__item"><a href="#" class="header__menu__link ">УДС</a></li>
+              <li class="menu__item"><a href="#" class="menu__link ">УДС</a></li>
 
-              <li class="header__menu__item"><a href="#" class="header__menu__link ">Проекты</a></li>
+              <li class="menu__item"><a href="#" class="menu__link ">Проекты</a></li>
 
-              <li class="header__menu__item"><a href="#" class="header__menu__link ">Материалы</a></li>
+              <li class="menu__item"><a href="#" class="menu__link ">Материалы</a></li>
 
-              <li class="header__menu__item"><a href="#" class="header__menu__link ">Пресс-центр</a></li>
+              <li class="menu__item"><a href="#" class="menu__link ">Пресс-центр</a></li>
 
-              <li class="header__menu__item"><a href="#" class="header__menu__link ">Галерея</a></li>
+              <li class="menu__item"><a href="#" class="menu__link ">Галерея</a></li>
 
-              <li class="header__menu__item"><a href="#" class="header__menu__link ">Контакты</a></li>
+              <li class="menu__item"><a href="#" class="menu__link ">Контакты</a></li>
 
             </ul>
           </nav>
 
         </div>
       </header>
-      <div class="slider_blind"></div>
+
       <div class="slider__wrapper">
         <div class="slider">
-          <div class="slider__item">
+          <div class="slider__item slider__item1">
             <img src="img/top_slider_bg.png" alt="aaaa">
             <div class="slider__item_blind"></div>
             <a href="#">
@@ -100,31 +100,31 @@
             </a>
             <div class="slider__text">Специальная программа для агросектора</div>
           </div>
-          <div class="slider__item">
-            <img src="img/top_slider_bg.png" alt="aaaa">
+
+          <div class="slider__item slider__item1">
+
             <div class="slider__item_blind"></div>
             <a href="#">
               <div class="slider__head">2222</div>
             </a>
-            <div class="slider__text">Специальная программа для агросектора 22222222</div>
+            <div class="slider__text">Специальна агросектора 22222222</div>
           </div>
-          <div class="slider__item">
-            <img src="img/top_slider_bg.png" alt="aaaa">
+
+          <div class="slider__item slider__item1">
+
             <div class="slider__item_blind"></div>
             <a href="#">
               <div class="slider__head">33333</div>
             </a>
-            <div class="slider__text">Специальная программа для агросектора 3333</div>
+            <div class="slider__text">Специальная 33333333333</div>
           </div>
-          <!-- 	<a class="prev" onclick="plusSlides(-1)">&#10096</a>
-		<a class="next" onclick="plusSlides(1)">&#10097</a> -->
         </div>
       </div>
 
       <main class="main">
         <div class="content">
-          <div class="wrapper clearfix">
-            <div class="wrapper_left">
+          <div class="wrapper wrapper_white">
+            <div class="wrapper__left">
               <div class="about">
                 <div class="about__info">
 
@@ -135,18 +135,14 @@
                 </div>
                 <div class="about__project">
                   <a href="#">
-                    <img class="about__project__img" src="img/work1.jpg" alt="">
-                    <div class="about__project__blind">
-                      <h4 class="about__project__title">Зеленый николаев</h4>
-                    </div>
+                    <img class="about__img" src="img/work1.jpg" alt="">
+                    <h4 class="about__title">Зеленый николаев</h4>
                   </a>
                 </div>
                 <div class="about__project">
                   <a href="#">
-                    <img class="about__project__img" src="img/work2.jpg" alt="">
-                    <div class="about__project__blind">
-                      <h4 class="about__project__title">Юридическая безопасность</h4>
-                    </div>
+                    <img class="about__img" src="img/work2.png" alt="">
+                    <h4 class="about__title">Юридическая безопасность</h4>
                   </a>
                 </div>
               </div>
@@ -201,93 +197,99 @@
 			</button>
             </div>
 
-            <div class="wrapper_right">
+            <div class="wrapper__right">
               <article class="sidebar__article">
-                <img src="img/sidebar_news_2.jpg" alt="">
-                <div class="blind"></div>
-                <h3 class="article__title">Совместная поездка СБУ и УДС в кабинет Министров Украины</h3>
-                <div class="article__photo">7</div>
-                <div class="article__watchers">178</div>
+                <a href="#">
+                  <img src="img/sidebar_news_2.jpg" alt="">
+
+                  <h3 class="article__title">Совместная поездка СБУ и УДС в кабинет Министров Украины</h3>
+                  <div class="article__photo">7</div>
+                  <div class="article__watchers">178</div>
+                </a>
               </article>
 
               <article class="sidebar__article">
-                <img src="img/sidebar_news_3.jpg" alt="">
-                <div class="blind"></div>
-                <h3 class="article__title">Помощь в получении разрешения на строительство моста</h3>
-                <div class="article__photo">9</div>
-                <div class="article__watchers">253</div>
+                <a href="#">
+                  <img src="img/sidebar_news_3.jpg" alt="">
+
+                  <h3 class="article__title">Помощь в получении разрешения на строительство моста</h3>
+                  <div class="article__photo">9</div>
+                  <div class="article__watchers">253</div>
+                </a>
               </article>
 
-              <article class="sidebar__article">
-                <img src="img/shuster.jpg" alt="">
-                <div class="article__desc">
-                  <div class="desc__title">Савик Шустер</div>
-                  <div class="desc__date">1.09.2015</div>
-                  <div class="desc__time">19:00</div>
-                </div>
+              <article class="sidebar__article person__article">
+                <a href="#">
+                  <img src="img/shuster.jpg" alt="">
+                  <div class="article__desc">
+                    <div class="desc__title">Савик Шустер</div>
+                    <div class="desc__date">1.09.2015</div>
+                    <div class="desc__time">19:00</div>
+                  </div>
+                </a>
               </article>
 
-              <article class="sidebar__article">
-                <h2 class="article__menu__title">Пресс-центр</h2>
-                <ul class="article__menu">
-                  <li class="article__menu__item"><a href="#" class="article__menu__link">События в Николаеве</a></li>
-                  <li class="article__menu__item"><a href="#" class="article__menu__link">Новости Украины</a></li>
-                  <li class="article__menu__item"><a href="#" class="article__menu__link">Деловые новости</a></li>
-                  <li class="article__menu__item"><a href="#" class="article__menu__link">Видео-интервью</a></li>
-                  <li class="article__menu__item"><a href="#" class="article__menu__link">Деятельность УДС</a></li>
+              <article class="sidebar__article article__menu">
+                <h2 class="menu__title">Пресс-центр</h2>
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="#" class="menu__link">События в Николаеве</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Новости Украины</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Деловые новости</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Видео-интервью</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Деятельность УДС</a></li>
                 </ul>
               </article>
 
               <button class="help__project"><div>Как помочь проекту</div></button>
 
             </div>
-            <div class="wrapper">
-              <div class="sb__wrapper">
-                <div class="slider__bottom">
-                  <div class="slider__item">
-                    <img src="img/footer-slide1.jpg" alt="" class="slider__img">
-                    <div class="slider__desc">Заседание УДС по срочным вопросам</div>
-                    <div class="slider__date">1 августа, 2015</div>
-                  </div>
-                  <div class="slider__item">
-                    <img src="img/footer-slide2.jpg" alt="" class="slider__img">
-                    <div class="slider__desc">УДС договорился о разводке Варваровского моста</div>
-                    <div class="slider__date">1 августа, 2015</div>
-                  </div>
-                  <div class="slider__item">
-                    <img src="img/footer-slide3.jpg" alt="" class="slider__img">
-                    <div class="slider__desc">Вызвали МЭРА на ковер в УДС</div>
-                    <div class="slider__date">1 августа, 2015</div>
-                  </div>
-                  <div class="slider__item">
-                    <img src="http://placeholde.com?size=300x120" alt="" class="slider__img">
-                    <div class="slider__desc">Строительство Моста продолжаетсяосам</div>
-                    <div class="slider__date">1 августа, 2015</div>
-                  </div>
-                  <div class="slider__item">
-                    <img src="http://placeholde.com/gen.php?size=300x120&bg=ff0000&fg=fff&format=jpg" alt="" class="slider__img">
-                    <div class="slider__desc">УДС договорился о разводке Варваровского моста</div>
-                    <div class="slider__date">1 августа, 2015</div>
-                  </div>
-                  <div class="slider__item">
-                    <img src="http://placeholde.com?size=300x120" alt="" class="slider__img">
-                    <div class="slider__desc">Вызвали МЭРА на ковер в УДС</div>
-                    <div class="slider__date">1 августа, 2015</div>
-                  </div>
-                  <div class="slider__item">
-                    <img src="http://placeholde.com/gen.php?size=300x120&bg=ff0000&fg=fff&format=jpg" alt="" class="slider__img">
-                    <div class="slider__desc">УДС договорился о разводке Варваровского моста</div>
-                    <div class="slider__date">1 августа, 2015</div>
-                  </div>
-                  <div class="slider__item">
-                    <img src="http://placeholde.com?size=300x120" alt="" class="slider__img">
-                    <div class="slider__desc">Вызвали МЭРА на ковер в УДС</div>
-                    <div class="slider__date">1 августа, 2015</div>
-                  </div>
-                </div>
+          </div>
+
+          <div class="sb__wrapper">
+            <div class="slider__bottom">
+              <div class="slider__item">
+                <img src="img/footer-slide1.jpg" alt="" class="slider__img">
+                <div class="slider__desc">Заседание УДС по срочным вопросам</div>
+                <div class="slider__date">1 августа, 2015</div>
+              </div>
+              <div class="slider__item">
+                <img src="img/footer-slide2.jpg" alt="" class="slider__img">
+                <div class="slider__desc">УДС договорился о разводке Варваровского моста</div>
+                <div class="slider__date">1 августа, 2015</div>
+              </div>
+              <div class="slider__item">
+                <img src="img/footer-slide3.jpg" alt="" class="slider__img">
+                <div class="slider__desc">Вызвали МЭРА на ковер в УДС</div>
+                <div class="slider__date">1 августа, 2015</div>
+              </div>
+              <div class="slider__item">
+                <img src="http://placeholde.com?size=300x120" alt="" class="slider__img">
+                <div class="slider__desc">Строительство Моста продолжаетсяосам</div>
+                <div class="slider__date">1 августа, 2015</div>
+              </div>
+              <div class="slider__item">
+                <img src="http://placeholde.com/gen.php?size=300x120&bg=ff0000&fg=fff&format=jpg" alt="" class="slider__img">
+                <div class="slider__desc">УДС договорился о разводке Варваровского моста</div>
+                <div class="slider__date">1 августа, 2015</div>
+              </div>
+              <div class="slider__item">
+                <img src="http://placeholde.com?size=300x120" alt="" class="slider__img">
+                <div class="slider__desc">Вызвали МЭРА на ковер в УДС</div>
+                <div class="slider__date">1 августа, 2015</div>
+              </div>
+              <div class="slider__item">
+                <img src="http://placeholde.com/gen.php?size=300x120&bg=ff0000&fg=fff&format=jpg" alt="" class="slider__img">
+                <div class="slider__desc">УДС договорился о разводке Варваровского моста</div>
+                <div class="slider__date">1 августа, 2015</div>
+              </div>
+              <div class="slider__item">
+                <img src="http://placeholde.com?size=300x120" alt="" class="slider__img">
+                <div class="slider__desc">Вызвали МЭРА на ковер в УДС</div>
+                <div class="slider__date">1 августа, 2015</div>
               </div>
             </div>
           </div>
+
         </div>
 
         <footer class="footer">

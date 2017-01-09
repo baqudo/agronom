@@ -2,7 +2,7 @@
 <header class="header">
 	<div class="wrapper">
 		<div class="header_top">
-			<div class="header__lang">
+			<div class="header__lang lang">
 				<a href="#" class="lang__link lang__link_active">рус</a>
 				<a href="#" class="lang__link">укр</a>
 				<a href="#" class="lang__link">eng</a>
@@ -37,14 +37,14 @@
 			<button class="header__search">поиск</button>
 
 			<nav class="header__nav">
-				<ul class="header__menu__list">
+				<ul class="menu__list">
 
-					<li class="header__menu__item"><a href="#" class="header__menu__link header__menu__link_active"><img src="img/home.png" alt=""></a></li>
+					<li class="menu__item"><a href="#" class="menu__link is-active"><img src="img/home.png" alt=""></a></li>
 
 				{% import "data/menu.html" as items %}
 
 				{% for item in items.header_menu %}
-					<li class="header__menu__item"><a href="{{item.href}}" class="{{item.class}} {{item.class2}}">{{item.title}}</a></li>
+					<li class="menu__item"><a href="{{item.href}}" class="{{item.class}} {{item.class2}}">{{item.title}}</a></li>
 				{% endfor %}
 
 				</ul>
@@ -52,4 +52,4 @@
 		
 	</div>
 </header>
-	<div class="slider_blind"></div>
+{# 	<div class="slider_blind"></div> #}

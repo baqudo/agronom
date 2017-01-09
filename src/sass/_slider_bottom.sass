@@ -1,23 +1,43 @@
 .sb__wrapper
-	@extend .clearfix
+	@extend .wrapper
+	+clr
 	width: 100%
 	height: 100%
+	
 .slider__bottom
 	width: 100%
 	height: 100%
 	background-color: #fff
 	overflow: hidden
-	display: flex
-	flex-wrap: no-wrap
 	.slick-prev
+		cursor: pointer
+		position: absolute
+		z-index: 10
+		top: 25%
+		left: 0
 		width: 29px
 		height: 49px
-		top: 25%
-		&:before
+		color: transparent
+		background-color: #FFF 
+		-webkit-border-radius: 0 6px 6px 0 
+		border-radius: 0 6px 6px 0
+		&:before, &:after
+			content: ""
+			display: block
+			width: 15px
+			height: 0
+			border: 2px solid #a1a1a1
+			border-radius: 10px
 			transform: rotate(-45deg) translate(6px, 2px)
 		&:after
 			transform: rotate(45deg) translate(6px, -2px)
+	.slick-next
+		@extend .slick-prev
+		transform: rotate(180deg)
+		left: auto
+		right: 0
 .slider__item
+	width: 30%
 	.slider__desc
 		color: black
 		font-size: 15px

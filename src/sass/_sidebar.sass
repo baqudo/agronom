@@ -2,27 +2,31 @@
 	width: 100%
 	height: 250px
 	position: relative
-	background: #fff
-
+	cursor: pointer
 	img
 		position: absolute
 		top: 0
 		width: 100%
-		height: 100%
-	.blind
-		position: absolute
-		top: 0
-		width: 100%
-		height: 100%
-		background-color: #000
-		opacity: 0.6
+		height: auto
+		&:before
+			position: absolute
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: #000
+			opacity: 0.6
+			
+	& a:hover > .sidebar__article:before
+		opacity: 0.3
+	& > a:hover
+		text-decoration: none
 
 .article__title
 	position: relative
 	width: 213px 
 	top: 90px
 	left: 20px  
-	color: white
+	color: #fff
 	font-size: 20px
 	font-weight: 400 
 	line-height: 24px
@@ -41,11 +45,10 @@
 		display: block
 		width: 24px
 		height: 20px 
-		background: url(../img/icon-photo.png) 
+		+s(icon-photo) 
 		position: absolute
 		top: 0
 		left: 0  
-
 .article__watchers
 	@extend .article__photo
 	margin-left: 30px 
@@ -54,7 +57,7 @@
 		display: block
 		width: 22px
 		height: 12px
-		background: url(../img/icon-eye.png) 
+		+s(icon-eye)
 		position: absolute
 		top: 4px
 		left: 3px
@@ -67,33 +70,34 @@
 	background-color: #ff8c1b
 	color: #fff
 	font-size: 13px
-
 	.desc__title
 		font-size: 20px
-		margin-top: 15px
-		margin-left: 10px  
-	
+		margin: 15px 0 10px 10px
+
 	.desc__date
 		display: inline-block
 		margin-left: 10px 
 	.desc__time
 		@extend .desc__date
 		
+.person__article:hover .article__desc
+	top: 250px - 70px
+	height: 70px
+	background-color: #77ba1f
+
 .article__menu__title
 	text-transform: uppercase
 	font-size: 15px
 	font-weight: 700
 	margin: 25px 0 10px 20px
-	
 .article__menu
-	margin-left: 20px 
-
-.article__menu__link
-	display: inline-block
-
-	font-size: 15px
-	font-weight: 400
-	line-height: 30px
+	.menu__list
+		margin-left: 20px 
+		.menu__link
+			display: inline-block
+			font-size: 15px
+			font-weight: 400
+			line-height: 30px
 
 .help__project
 	display: block
@@ -135,6 +139,5 @@
 		left: 68px 
 		z-index: 2
 	&:hover
-		filter: drop-shadow(5px 5px 3px #000)
-		// -webkit-box-shadow: 2px 2px 2px 0 rgba 
-		// box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5)
+		filter: drop-shadow(3px 3px 5px #000)
+

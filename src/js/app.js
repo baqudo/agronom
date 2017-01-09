@@ -13,31 +13,27 @@ $(document).ready(function (){
 $(document).ready(function (){
 	$('.slider__bottom').slick({
 		centerMode: true,
-		centerPadding: '350px',
+		centerPadding: '35%',
 		autoplay: true,
 		responsive: [
 		    {
-		      breakpoint: 1024,
+		      breakpoint: 999,
 		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
 		        infinite: true,
-		        dots: true
+		        centerPadding: '30%'
 		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
+		    // },
+		    // {
+		    //   breakpoint: 600,
+		    //   settings: {
+		    //   }
+		    // },
+		    // {
+		    //   breakpoint: 480,
+		    //   settings: {
+		    //     slidesToShow: 1,
+		    //     slidesToScroll: 1
+		    //   }
 		    }
 		]
 	});
