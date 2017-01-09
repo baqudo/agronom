@@ -16,7 +16,7 @@
 			background-color: #000
 			opacity: 0.6
 			
-	& a:hover > .sidebar__article:before
+	& > a:hover > .sidebar__article:before
 		opacity: 0.3
 	& > a:hover
 		text-decoration: none
@@ -45,10 +45,11 @@
 		display: block
 		width: 24px
 		height: 20px 
-		+s(icon-photo) 
+		// +s(icon-photo) 
 		position: absolute
 		top: 0
-		left: 0  
+		left: 0
+
 .article__watchers
 	@extend .article__photo
 	margin-left: 30px 
@@ -57,7 +58,7 @@
 		display: block
 		width: 22px
 		height: 12px
-		+s(icon-eye)
+		// +s(icon-eye)
 		position: absolute
 		top: 4px
 		left: 3px
@@ -79,26 +80,28 @@
 		margin-left: 10px 
 	.desc__time
 		@extend .desc__date
-		
+
 .person__article:hover .article__desc
 	top: 250px - 70px
 	height: 70px
 	background-color: #77ba1f
 
-.article__menu__title
-	text-transform: uppercase
-	font-size: 15px
-	font-weight: 700
-	margin: 25px 0 10px 20px
-.article__menu
-	.menu__list
-		margin-left: 20px 
-		.menu__link
-			display: inline-block
-			font-size: 15px
-			font-weight: 400
-			line-height: 30px
 
+.submenu
+	&__title
+		text-transform: uppercase
+		font-size: 15px
+		font-weight: 700
+		margin: 25px 0 10px 20px
+	
+	&__list
+		margin-left: 20px 
+	&__link
+		display: inline-block
+		font-size: 15px
+		font-weight: 400
+		line-height: 30px
+		
 .help__project
 	display: block
 	position: relative
